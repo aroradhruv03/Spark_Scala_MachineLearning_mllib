@@ -2,14 +2,13 @@ import org.apache.spark.mllib.classification.NaiveBayes
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
-import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.mllib.tree.configuration.Algo.Classification
+import org.apache.spark.mllib.tree.impurity.Entropy
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.mllib.tree.impurity.{Entropy, Variance}
 /**
   * Created by dhruv on 4/7/16.
   */
-object Q2 {
+object DecisionTree {
 
   val INP_FILE = "glass.data"
   val INP_FILE_MOVIES = "movies.dat"
