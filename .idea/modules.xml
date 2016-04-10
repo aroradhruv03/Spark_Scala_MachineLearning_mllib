@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Assign3.iml" filepath="$PROJECT_DIR$/Assign3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ML_Spark.iml" filepath="$PROJECT_DIR$/ML_Spark.iml" />
     </modules>
   </component>
 </project>

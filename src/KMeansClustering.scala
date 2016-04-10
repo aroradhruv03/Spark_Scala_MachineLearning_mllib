@@ -1,15 +1,14 @@
-import org.apache.spark.{SparkContext, SparkConf}
-import org.apache.spark.mllib.clustering.{KMeans, KMeansModel}
+import org.apache.spark.mllib.clustering.KMeans
 import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.collection.mutable.ArrayBuffer
 //import scalax.io._
-import java.io.File
 
 /**
   * Created by dhruv on 4/7/16.
   */
-object Q1 {
+object KMeansClustering {
 
   val INP_FILE = "itemusermat"
   val INP_FILE_MOVIES = "movies.dat"
@@ -17,7 +16,7 @@ object Q1 {
 
   def main (args: Array[String])
   {
-    val conf = new SparkConf().setAppName("Q1.K-Means Clustering").setMaster("local")
+    val conf = new SparkConf().setAppName("K-Means Clustering").setMaster("local")
     val sc = new SparkContext(conf)
 
     // Reading the itemusermat (Movie Rating) file
